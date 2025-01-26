@@ -51,9 +51,15 @@
 									<div><img src="images/confusionmatrix.png" alt="Example Image" width="500"/></div>
 									<div><img src="images/clusteringcode.png" alt="Example Image" width="500"/></div>
 									
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+									<p>In this activity, I worked with the well-known Iris dataset from the UCI Machine Learning Repository, which contains 150 observations of three species of the Iris flower (setosa, versicolor, and virginica). Each flower is measured on four numeric attributes: sepal length, sepal width, petal length, and petal width.</p>
+									<p>The primary goal was to perform K-Means clustering on these measurements to see if the algorithm could group the samples in a way that corresponds to the three known species. First, I pre-processed the data by removing the non-numeric species column (because K-Means relies on Euclidean distance among numeric features). Then, I tested several values of 
+�
+K but paid special attention to 
+�
+=
+3
+K=3, given that we know there are exactly three flower species in the dataset.</p>
+									<p>After fitting a K-Means model, I compared the resulting clusters (labels assigned by the algorithm) with the actual species labels. A confusion matrix (or a cross-tabulation) helped me see how many of each true species fell into each cluster. Although K-Means does not inherently know about the actual labels, it tends to separate setosa perfectly and does a reasonably good job distinguishing versicolor and virginica, typically yielding around 88–90% accuracy when mapping clusters to species by majority vote.</p>
 								</div>
 							</section>
 
