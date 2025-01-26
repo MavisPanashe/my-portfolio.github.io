@@ -52,13 +52,7 @@
 									<div><img src="images/clusteringcode.png" alt="Example Image" width="500"/></div>
 									
 									<p>In this activity, I worked with the well-known Iris dataset from the UCI Machine Learning Repository, which contains 150 observations of three species of the Iris flower (setosa, versicolor, and virginica). Each flower is measured on four numeric attributes: sepal length, sepal width, petal length, and petal width.</p>
-									<p>The primary goal was to perform K-Means clustering on these measurements to see if the algorithm could group the samples in a way that corresponds to the three known species. First, I pre-processed the data by removing the non-numeric species column (because K-Means relies on Euclidean distance among numeric features). Then, I tested several values of 
-�
-K but paid special attention to 
-�
-=
-3
-K=3, given that we know there are exactly three flower species in the dataset.</p>
+									<p>The primary goal was to perform K-Means clustering on these measurements to see if the algorithm could group the samples in a way that corresponds to the three known species. First, I pre-processed the data by removing the non-numeric species column (because K-Means relies on Euclidean distance among numeric features). Then, I tested several values of K but paid special attention to K=3, given that we know there are exactly three flower species in the dataset.</p>
 									<p>After fitting a K-Means model, I compared the resulting clusters (labels assigned by the algorithm) with the actual species labels. A confusion matrix (or a cross-tabulation) helped me see how many of each true species fell into each cluster. Although K-Means does not inherently know about the actual labels, it tends to separate setosa perfectly and does a reasonably good job distinguishing versicolor and virginica, typically yielding around 88–90% accuracy when mapping clusters to species by majority vote.</p>
 								</div>
 							</section>
